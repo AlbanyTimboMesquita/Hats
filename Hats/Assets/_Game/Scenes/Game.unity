@@ -153,6 +153,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  currentTime: 0
+  startTime: 30
+  gameStarted: 0
 --- !u!4 &621581358
 Transform:
   m_ObjectHideFlags: 0
