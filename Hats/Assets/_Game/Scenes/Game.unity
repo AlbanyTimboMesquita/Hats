@@ -673,6 +673,73 @@ Transform:
   - {fileID: 50893076}
   m_Father: {fileID: 579003171}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1678904661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1678904662}
+  - component: {fileID: 1678904663}
+  m_Layer: 0
+  m_Name: point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1678904662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678904661}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1823238247}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1678904663
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678904661}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
 --- !u!1 &1684701980
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +783,7 @@ GameObject:
   - component: {fileID: 1823238247}
   - component: {fileID: 1823238246}
   - component: {fileID: 1823238245}
+  - component: {fileID: 1823238248}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -765,8 +833,70 @@ Transform:
   m_Children:
   - {fileID: 507877122}
   - {fileID: 1493304636}
+  - {fileID: 1678904662}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1823238248
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823238244}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2713841, y: 0.6983056}
+  - {x: -1.2096148, y: 0.4724052}
+  - {x: -1.0584887, y: 0.34460282}
+  - {x: -0.94981706, y: 0.18575096}
+  - {x: -0.9172404, y: -0.2857871}
+  - {x: -0.9643719, y: -0.47624636}
+  - {x: -1.0130526, y: -0.6763344}
+  - {x: -0.9375513, y: -0.81708884}
+  - {x: -0.7515413, y: -0.9622083}
+  - {x: -0.48272908, y: -1.1006086}
+  - {x: -0.0054574013, y: -1.1995931}
+  - {x: 0.3168454, y: -1.1404898}
+  - {x: 0.65504074, y: -1.0068786}
+  - {x: 0.8583869, y: -0.8482375}
+  - {x: 0.9412251, y: -0.74932766}
+  - {x: 0.8707931, y: -0.47719216}
+  - {x: 0.8093387, y: -0.058239937}
+  - {x: 0.83120966, y: 0.1425128}
+  - {x: 1.058521, y: 0.27264094}
+  - {x: 1.2310474, y: 0.41430426}
+  - {x: 1.2876139, y: 0.55903673}
+  - {x: 1.271384, y: 0.7389046}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
