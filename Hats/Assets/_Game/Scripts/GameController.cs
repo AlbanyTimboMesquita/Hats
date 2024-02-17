@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     {
         score=0;
         currentTime=startTime;
-        gameStarted = true;
+        gameStarted = false;
     }
 
     // Update is called once per frame
@@ -26,8 +26,8 @@ public class GameController : MonoBehaviour
         if(currentTime>0f && gameStarted){
             currentTime-=Time.deltaTime;
         }else{
-            gameStarted=false;
-            currentTime=0f;
+            /* gameStarted=false;
+            currentTime=0f; */
             return;
         }
         
