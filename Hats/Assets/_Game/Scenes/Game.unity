@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 204840143}
   - component: {fileID: 204840142}
   m_Layer: 5
-  m_Name: ButtonResume
+  m_Name: ButtonRestart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -280,7 +280,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 204840143}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738879064}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ButtonRestart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &204840143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,11 +570,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1284648497}
+  m_Father: {fileID: 2114507888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1180, y: 639}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470851223
@@ -753,7 +765,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 498970256}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738879064}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ButtonResume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &498970256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,8 +910,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1263391955}
   - {fileID: 1828268094}
+  - {fileID: 1263391955}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1004,7 +1028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   currentTime: 0
-  startTime: 30
+  startTime: 10
   gameStarted: 0
 --- !u!4 &621581358
 Transform:
@@ -1103,7 +1127,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 740896092}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738879064}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ButtonBackMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &740896092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1775,7 +1811,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1263391955
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1868,7 +1904,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2114507888}
-  - {fileID: 470851222}
   - {fileID: 1823050828}
   m_Father: {fileID: 1828268094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2271,7 +2306,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1525616129}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738879064}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ButtonBackMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1525616129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2474,6 +2521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelMainMenu: {fileID: 1263391954}
+  panelGame: {fileID: 1284648496}
+  panelPause: {fileID: 604161347}
+  PanelGameOver: {fileID: 1306595704}
 --- !u!4 &1738879065
 Transform:
   m_ObjectHideFlags: 0
@@ -2640,7 +2690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1828268094
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2865,7 +2915,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 470851222}
   m_Father: {fileID: 1284648497}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2916,7 +2967,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2114507890}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1738879064}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ButtonPause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2114507890
 MonoBehaviour:
   m_ObjectHideFlags: 0
