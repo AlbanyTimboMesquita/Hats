@@ -21,18 +21,7 @@ public TMP_Text txtHighScore, txtTime, txtScore;
     {
         
     }
-    public void ButtonExit(){
-    /*    //PC ou Celular
-        if(Input.GetKeyDown(KeyCode.Escape)){
-            Application.Quit();
-        } */
 
-        // Android
-        AndroidJavaObject actvity = new AndroidJavaClass("com.unity3d.player.UnitPlayer").GetStatic<AndroidJavaObject>
-        ("currentActivity");
-        actvity.Call<bool>("moveTaskToBack",true);
-        
-    }
     public void ButtonStartGame(){
         
         panelMainMenu.gameObject.SetActive(false);
