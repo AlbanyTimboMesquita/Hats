@@ -14,6 +14,9 @@ public class SpawnController : MonoBehaviour
     private UnityEngine.Vector2 screenWidth;
 
     private GameController gameController;
+
+    public Transform allBallsParent;
+
     private void Awake() 
     {
         Initialize();
@@ -41,6 +44,7 @@ public class SpawnController : MonoBehaviour
             yield return new WaitForSeconds(0f);
             transform.position =  new UnityEngine.Vector2(Random.Range(-screenWidth.x + lateralMargin,screenWidth.x-lateralMargin),transform.position.y);
             GameObject tempBallPrefab = Instantiate(ballPrefab, transform.position, UnityEngine.Quaternion.identity) as GameObject;
+            tempBallPrefab.transform.parent = allBallsParent;
         }else{
             yield return null;
         }
