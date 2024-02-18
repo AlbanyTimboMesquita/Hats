@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 public class Background : MonoBehaviour
 {
     // Start is called before the first frame update
+   
+   
     void Start()
     {
 
@@ -20,9 +23,17 @@ public class Background : MonoBehaviour
         scaleTemp.y=heightCamera/height;
 
         transform.localScale = scaleTemp;
+        
+        
 
         
     }
+    void Update(){
+        
+    
+        
+    }
+   
 
 
 }

@@ -110,7 +110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioPlayer: {fileID: 5064767484016659390, guid: fb5fb7dd3cbc7af43aa800058eecfba0, type: 3}
-  audioPlayer2: {fileID: 5124131542478646516, guid: d3c14af55ac6e79478c1b5a202a33466, type: 3}
 --- !u!1 &4694906170821807621
 GameObject:
   m_ObjectHideFlags: 0
