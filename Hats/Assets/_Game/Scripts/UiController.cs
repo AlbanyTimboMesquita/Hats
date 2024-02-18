@@ -61,6 +61,6 @@ public TMP_Text txtHighScore, txtTime, txtScore;
 
     }
     public void MostrarMaiorPontuacao(){
-        txtHighScore.text="Max: "+ gameController.Getscore().ToString();
+        txtHighScore.text= gameController.Getscore().ToString();
     }
 }

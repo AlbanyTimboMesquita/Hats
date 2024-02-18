@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
         spawnController= FindObjectOfType<SpawnController>();
         highScore=Getscore();
         uiController.txtTime.text = currentTime.ToString();
-        //uiController.txtScore.text = "Score: "+score.ToString();
+        uiController.txtScore.text = score.ToString();
         playerPosition=player.position;
         
     }
@@ -72,7 +72,7 @@ public class GameController : MonoBehaviour
     }
     public void CountDownTime(){
         uiController.txtTime.text = currentTime.ToString();
-        //uiController.txtScore.text = "Score: "+score.ToString();
+        uiController.txtScore.text = score.ToString();
         if(currentTime>0f && gameStarted){
             currentTime-=1f;
         }else{

@@ -16,6 +16,7 @@ public class MyTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D target) {
         if(target.gameObject.CompareTag("Destroyer")){
+            gameController.score-=3;
             Destroy(this.gameObject);
         }else if(target.gameObject.CompareTag("Point")){
                 gameController.score+=23;
